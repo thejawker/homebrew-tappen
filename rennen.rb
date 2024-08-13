@@ -5,20 +5,20 @@
 class Rennen < Formula
   desc "a tool that can run multiple processes in parallel"
   homepage "https://github.com/thejawker/rennen"
-  version "0.0.11"
+  version "0.1.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/thejawker/rennen/releases/download/v0.0.11/rennen_Darwin_x86_64.tar.gz"
-      sha256 "8e11b578cf0a5ac2c91ceb4f9b001e0d7f6e143d732991e2f6d33e822333e60b"
+      url "https://github.com/thejawker/rennen/releases/download/v0.1.0/rennen_Darwin_x86_64.tar.gz"
+      sha256 "60b852f06d09eaa939ce07785c999cb5215c9dde2919744d1ccd49ebe3d88232"
 
       def install
         bin.install "ren"
       end
     end
     on_arm do
-      url "https://github.com/thejawker/rennen/releases/download/v0.0.11/rennen_Darwin_arm64.tar.gz"
-      sha256 "8b7a8825ca516a298179ac806c41f050e1aabac70c27cd04675ca99fd93e256f"
+      url "https://github.com/thejawker/rennen/releases/download/v0.1.0/rennen_Darwin_arm64.tar.gz"
+      sha256 "0bcf079014600de1663017a3a7ceac852325105577917f6dbc21e654580378b1"
 
       def install
         bin.install "ren"
@@ -29,8 +29,8 @@ class Rennen < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thejawker/rennen/releases/download/v0.0.11/rennen_Linux_x86_64.tar.gz"
-        sha256 "4437af513019af2c56946f5f31b115cee074b6b619a2be4db19ce56880520190"
+        url "https://github.com/thejawker/rennen/releases/download/v0.1.0/rennen_Linux_x86_64.tar.gz"
+        sha256 "23d274c6799559d2994e5d50b9e4e1885b8a4921c18d2283e30a135743de69bd"
 
         def install
           bin.install "ren"
@@ -39,8 +39,8 @@ class Rennen < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thejawker/rennen/releases/download/v0.0.11/rennen_Linux_arm64.tar.gz"
-        sha256 "589436edcbb402a52b58e5289c2fecce5d2604db3f0822a2c08a4f3021479fdd"
+        url "https://github.com/thejawker/rennen/releases/download/v0.1.0/rennen_Linux_arm64.tar.gz"
+        sha256 "f9717e52ad5c037d19eaac899375db0bd2719909a97f58db298ddf6eb2bc2b32"
 
         def install
           bin.install "ren"
